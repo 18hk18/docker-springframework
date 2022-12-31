@@ -30,7 +30,7 @@ pipeline {
     stage('Upload Image') {
      steps{   
          script {
-            docker.withRegistry( '', registryCredential ) {
+            docker.withRegistry('https://214577799134.dkr.ecr.us-east-1.amazonaws.com"', 'ecr:us-east-1:aws') {
             dockerImage.push()
             }
         }
