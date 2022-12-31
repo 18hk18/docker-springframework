@@ -4,7 +4,7 @@ pipeline {
         //once you sign up for Docker hub, use that user_id here
         registry = "214577799134.dkr.ecr.us-east-1.amazonaws.com/springboot"
         //- update your credentials ID after creating credentials for connecting to Docker Hub
-        registryCredential = 'Amazon ECR Registry:aws-US_EAST_1'
+        registryCredential = 'aws'
         dockerImage = ''
     }
     stages 
